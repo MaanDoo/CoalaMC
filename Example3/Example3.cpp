@@ -45,7 +45,7 @@ void drawForward(BlockID block, int count, bool emptyOnly)
 
 	int dx = -count * sin(radian);					// 라인의 끝이 되는 x좌표
 	int dz = count * cos(radian);					// 라인의 끝이 되는 z좌표
-
+	printf("%d %d", dx, dz);
 	drawLine(block, px, py, pz, px + dx, py, pz + dz, emptyOnly);		// 두 점을 잇는 라인을 그린다.
 }
 
